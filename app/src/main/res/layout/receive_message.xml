@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:layout_gravity="start">
+    <LinearLayout
+        android:id="@+id/mLinear"
+        android:orientation="horizontal"
+        android:background="@drawable/receive_drawable"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_receiveMessage_message"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textStyle="bold|normal"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/tv_receiveMessage_image"
+        android:layout_margin="@dimen/_4sdp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/placeholder"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_120sdp"/>
+
+
+</LinearLayout>
